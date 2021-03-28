@@ -18,8 +18,4 @@ target 'GitHubUserList' do
     # Pods for testing
   end
 
-  target 'GitHubUserListUITests' do
-    # Pods for testing
-  end
-
 end
