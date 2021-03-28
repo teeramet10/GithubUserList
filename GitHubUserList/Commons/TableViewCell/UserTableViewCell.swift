@@ -32,7 +32,6 @@ class UserTableViewCell: UITableViewCell {
         userDetailView.delegate = self
         userDetailView.setData(data)
     }
-    
 }
 
 extension UserTableViewCell : UserDetailViewDelegate{

@@ -27,6 +27,7 @@ class UserDetailView : BaseView {
         self.data = data
         nameLabel.text = data.login ?? ""
         urlLabel.text = data.htmlURL
+        urlLabel.sizeToFit()
         let image = data.isFavorite ? "ic_heart_fill" : "ic_heart"
         favButton.setImage(UIImage(named: image), for: .normal)
         ImageUtils.loadImage(imgProfile, data.avatarURL)

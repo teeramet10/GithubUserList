@@ -45,6 +45,8 @@ class UserListViewController: BaseViewController {
         searchBar.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.estimatedRowHeight = 130
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.addSubview(refreshControl)
         tableView.register(UserTableViewCell.nib, forCellReuseIdentifier: UserTableViewCell.identifier)
         self.emptyView.isHidden = true
@@ -238,9 +240,5 @@ extension UserListViewController: UserTableViewCellDelegate{
     
     func removeFavorite(_ data: GitHubUserModel,_ index :Int) {
         self.viewModel.input.didRemoveFavorite(data: data,index)
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
     }
 }

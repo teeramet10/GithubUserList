@@ -99,14 +99,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G29-Cx-GlI">
-                                <rect key="frame" x="0.0" y="168" width="414" height="728"/>
+                                <rect key="frame" x="0.0" y="174" width="414" height="688"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IbY-aM-ff6" customClass="UserDetailView" customModule="GitHubUserList" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="124"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="130"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="124" id="iF3-01-I6K"/>
+                                    <constraint firstAttribute="height" constant="130" id="mpd-IK-s2n"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -115,10 +115,10 @@
                         <constraints>
                             <constraint firstItem="HXX-Yb-iEA" firstAttribute="trailing" secondItem="IbY-aM-ff6" secondAttribute="trailing" id="9M1-25-a75"/>
                             <constraint firstItem="HXX-Yb-iEA" firstAttribute="trailing" secondItem="G29-Cx-GlI" secondAttribute="trailing" id="JYd-Uh-jPQ"/>
-                            <constraint firstAttribute="bottom" secondItem="G29-Cx-GlI" secondAttribute="bottom" id="RmG-GS-2mg"/>
+                            <constraint firstItem="HXX-Yb-iEA" firstAttribute="bottom" secondItem="G29-Cx-GlI" secondAttribute="bottom" id="RmG-GS-2mg"/>
                             <constraint firstItem="G29-Cx-GlI" firstAttribute="top" secondItem="IbY-aM-ff6" secondAttribute="bottom" id="asa-QF-43h"/>
                             <constraint firstItem="IbY-aM-ff6" firstAttribute="top" secondItem="HXX-Yb-iEA" secondAttribute="top" id="ckb-I3-OOi"/>
-                            <constraint firstItem="G29-Cx-GlI" firstAttribute="leading" secondItem="RFq-du-A9r" secondAttribute="leading" id="lW1-Zz-u5C"/>
+                            <constraint firstItem="G29-Cx-GlI" firstAttribute="leading" secondItem="HXX-Yb-iEA" secondAttribute="leading" id="lW1-Zz-u5C"/>
                             <constraint firstItem="IbY-aM-ff6" firstAttribute="leading" secondItem="HXX-Yb-iEA" secondAttribute="leading" id="xFn-y0-562"/>
                         </constraints>
                     </view>

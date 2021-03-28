@@ -28,6 +28,7 @@ class RepositoryTableViewCell: UITableViewCell {
         self.index = index
         self.data = data
         nameLabel.text = data.fullName
+        nameLabel.sizeToFit()
         languageLabel.text = data.language
         stargazersLabel.text = String(data.stargazersCount ?? 0)
     }
