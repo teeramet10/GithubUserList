@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-protocol UserDetailViewDelegate {
+protocol UserDetailViewDelegate : class{
     func addFavorite(_ data : GitHubUserModel)
     func removeFavorite(_ data : GitHubUserModel)
 }
@@ -21,8 +21,8 @@ class UserDetailView : BaseView {
 
     var data : GitHubUserModel?
     
-    var delegate : UserDetailViewDelegate?
-    
+    weak var delegate : UserDetailViewDelegate?
+
     func setData(_ data : GitHubUserModel , _ isReadOnly : Bool = false){
         self.data = data
         nameLabel.text = data.login ?? ""

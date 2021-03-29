@@ -6,7 +6,7 @@
 //
 
 import UIKit
-protocol UserTableViewCellDelegate {
+protocol UserTableViewCellDelegate : class {
     func addFavorite(_ data: GitHubUserModel,_ index :Int)
     func removeFavorite(_ data: GitHubUserModel,_ index :Int)
 }
@@ -18,7 +18,7 @@ class UserTableViewCell: UITableViewCell {
 
     @IBOutlet weak var userDetailView : UserDetailView!
     
-    var delegate :UserTableViewCellDelegate?
+    weak var delegate :UserTableViewCellDelegate?
     
     var index : Int?
     
